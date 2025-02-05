@@ -8,7 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository
-        uses: actions/checkout@v3
-      - name: Install, build, and deploy
-        uses: withastro/action@v1
+      - name: Setup Node
+      uses: actions/setup-node@v4 # Official GitHub Action for Node.js setup
+      with:
+      node-version: "20" # Specifies Node.js version
+      cache: "npm" # Enables npm package caching
