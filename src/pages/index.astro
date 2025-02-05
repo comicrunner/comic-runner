@@ -1,1 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ComicCard from '../components/ComicCard.astro';
+import comicsData from '../data/comics.json';
 
+const topComics = comicsData.comics.slice(0, 8);
+const randomComics = comicsData.comics.sort(() => 0.5 - Math.random()).slice(0, 4);
+---
+
+<Layout title="Comic Runner - Home">
+  <h1>Top Comics</h1>
+  <div class="comic-grid">
+    {topComics.map(comic => <ComicCard comic={comic} />)}
+  </div>
+
+  <h2>Random Picks</h2>
+  <div class="comic-grid">
+    {randomComics.map(comic => <ComicCard comic={comic} />)}
+  </div>
+</Layout>
