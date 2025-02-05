@@ -4,6 +4,10 @@ on:
     branches: [main]
   workflow_dispatch:
 
+- name: Install dependencies
+  run: npm install  # Changed from npm ci
+  working-directory: ${{ env.BUILD_PATH }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
