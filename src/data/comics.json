@@ -1,0 +1,13 @@
+{
+  "comics": [
+    {
+      "id": 1,
+      "title": "Spider-Man: Miles Morales",
+      "author": "Brian Michael Bendis",
+      "genre": "Superhero",
+      "description": "Miles Morales takes up the Spider-Man mantle",
+      "amazonLink": "#",
+      "coverImage": "/comics/miles-morales-spider-man.jpg"
+    }
+  ]
+}
