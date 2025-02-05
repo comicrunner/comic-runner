@@ -1,14 +1,14 @@
 {
-  "name": "comic-runner",
-  "type": "module",
-  "version": "0.0.1",
+  "name": "comic-runner", // Project name (unique identifier)
+  "type": "module", // Uses ES modules for modern JavaScript
+  "version": "0.0.1", // Initial version (semantic versioning)
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    // Predefined npm commands for project
+    "dev": "astro dev", // Starts development server
+    "build": "astro build" // Builds production site
   },
   "dependencies": {
-    "astro": "^4.0.0"
+    // Core project dependency
+    "astro": "^4.5.3" // Latest Astro version (^ allows minor updates)
   }
 }
